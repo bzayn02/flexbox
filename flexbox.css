@@ -1,0 +1,45 @@
+body{
+    font-size: 30px;
+    /* background-color: rgb(146, 122, 91); */
+}
+
+.wrapper{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height:80vh;
+}
+.container{
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: cyan;
+    align-content: center;
+}
+
+.container > div {
+    background: grey;
+    width: 80px;
+    height: 80px;
+    margin: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div:nth-child(even){
+    height:130px;
+    background-color: blue;
+}
+
+.item-2{
+    order:2;
+}
+
+.item-4{
+    order:-2;
+}
